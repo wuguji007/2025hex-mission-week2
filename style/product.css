@@ -1,0 +1,94 @@
+
+/* 產品圖片樣式 */
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+
+.product-col {
+    width: calc(100%/12 * 6);
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+/* Price */
+.price .h5 {
+    color: var(--primary-400);
+}
+
+.price del {
+    font-size: 14px;
+    color: var(--neutral-500);
+}
+
+/* 產品顏色 */
+.product-color img{
+    width: 64px;
+}
+
+.product-color p{
+    color: var(--neutral-600);
+    font-weight: 500;
+    text-align: center;
+}
+
+/* 產品尺寸 */
+.product-size {
+    width: 160px;
+    border: 1px solid var(--neutral-300);
+}
+
+.product-size.active,
+.product-size:hover {
+    border: 1px solid var(--neutral-900);    
+}
+
+.product-size.disabled:hover {
+    border: 1px solid var(--neutral-300); 
+}
+
+.size-left {
+    font-size: 14px;
+    color: var(--danger-300);
+}
+
+/* 收藏or預約 */
+.btn.btn-light {
+    border: 1px solid var(--neutral-900);
+    transition: .2s;
+    &:hover {
+        color: var(--neutral-0);
+        background-color: var(--neutral-900);
+    }     
+}
+
+.btn.btn-dark {
+    color: var(--neutral-0);
+    background: var(--neutral-900);
+    transition: .2s;
+    &:hover {
+        background-color: var(--neutral-700);
+    }
+}
+
+.btn-save .bi {
+    padding-right: 8px;
+}
+
+
+/* 產品資訊 */
+.product-info {
+    border-bottom: 1px solid var(--neutral-300);
+}
+
+.product-info-title {
+    font-weight: 500;
+}
+
+.product-info-text {
+    color: var(--neutral-600);
+}
+
