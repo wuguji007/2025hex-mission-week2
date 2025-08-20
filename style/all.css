@@ -7,19 +7,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -27,25 +95,44 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -57,17 +144,17 @@ table {
 	--primary-300: #C0FA73;
 	--primary-400: #57A203;
 	--primary-500: #477A11;
-	--neutral-0:   #FFFFFF;
+	--neutral-0: #FFFFFF;
 	--neutral-100: #F8F9FA;
 	--neutral-200: #E9ECEF;
 	--neutral-300: #DEE2E6;
 	--neutral-400: #CED4DA;
-	--neutral-500: #ADB5BD;			
+	--neutral-500: #ADB5BD;
 	--neutral-600: #6C757D;
 	--neutral-700: #495057;
 	--neutral-800: #343A40;
-	--neutral-900: #212529;	
-	--danger-300:  #D74F4F;	
+	--neutral-900: #212529;
+	--danger-300: #D74F4F;
 }
 
 
@@ -86,7 +173,7 @@ body {
 
 
 .container {
-    max-width: 1296px;
+	max-width: 1296px;
 	margin: 0 auto;
 }
 
@@ -203,31 +290,31 @@ a {
 	color: var(--neutral-900);
 }
 
-h2 {
+.h2 {
 	font-size: 32px;
 	line-height: 1.2;
 	font-weight: 700;
 }
 
-h3 {
+.h3 {
 	font-size: 28px;
 	line-height: 1.2;
 	font-weight: 700;
 }
 
-h4 {
+.h4 {
 	font-size: 24px;
 	line-height: 1.2;
-	font-weight: 700;	
+	font-weight: 700;
 }
 
-h5 {
+.h5 {
 	font-size: 20px;
 	line-height: 1.2;
-	font-weight: 700;	
+	font-weight: 700;
 }
 
-h6 {
+.h6 {
 	font-size: 16px;
 	line-height: 1.2;
 	font-weight: 700;
@@ -358,6 +445,7 @@ h6 {
 
 .hover-8 {
 	transition: .3s;
+
 	&:hover {
 		opacity: 0.8;
 	}
@@ -365,15 +453,15 @@ h6 {
 
 
 .icon {
-    width: 24px 24px;
+	width: 24px 24px;
 }
 
 ul li a {
-    font-weight: 500;
+	font-weight: 500;
 }
 
 
-.breadcrumb + .breadcrumb::before {
+.breadcrumb+.breadcrumb::before {
 	content: "/";
 	padding: 0 12px;
 	color: var(--neutral-300);
@@ -391,6 +479,7 @@ ul li a {
 
 
 .btn {
+	font-family: "Noto Sans TC";
 	border: none;
 	border-radius: 4px;
 	padding: 12px 24px;
@@ -403,31 +492,31 @@ ul li a {
 
 
 .register {
-    background: var(--primary-200);
+	background: var(--primary-200);
 }
 
-.btn .link { 
+.btn .link {
 	color: var(--neutral-0);
-    background: var(--neutral-900);
-    border-radius: 4px;
-    transition: .2s;    
-    &:hover {
-        background-color: var(--neutral-700);
-    }
+	background: var(--neutral-900);
+	border-radius: 4px;
+	transition: .2s;
+
+	&:hover {
+		background-color: var(--neutral-700);
+	}
 }
 
 
 .footer-nav .logo {
-    padding: 8px 12px;
+	padding: 8px 12px;
 }
 
 
 .copyright {
-    border-top: 1px solid var(--neutral-300);
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--neutral-600);
-    text-align: center;
-    line-height: 1.5;
+	border-top: 1px solid var(--neutral-300);
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--neutral-600);
+	text-align: center;
+	line-height: 1.5;
 }
-
